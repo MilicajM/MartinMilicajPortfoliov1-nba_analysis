@@ -1,0 +1,273 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Martin Milicaj - NBA Analysis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href="https://milicajm.github.io/MartinMilicajPortfoliov1/" class="logo"><strong>Martin Milicaj</strong> <span>Data Analyst</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="https://milicajm.github.io/MartinMilicajPortfoliov1/">Home</a></li>
+							<li><a href="files/Resume.pdf">Resume</a></li>
+							<li><a href="https://www.linkedin.com/in/milicajm/">LinkedIn</a></li>
+							<li><a href="https://github.com/MilicajM">GitHub</a></li>
+							<li><a href="https://public.tableau.com/app/profile/martin.milicaj">Tableau</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/prince1.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>NBA Stat Data Analysis</h1>
+								<h2>Regular and Postseason Data from 2000-2023</h2>
+							</header>
+							<div class="content">
+								<p>In this project I explore the data from one of my favorite sports basketball.<br />
+									The game changes so often from year to year so I decided to focus the stats from this millenia. </p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h2>Intent</h2>
+									</header>
+									<p>The intent with this project was originally to see if we could scrape accurate NBA stats from the internet. 
+										From that point with the data coming in fairly clean we made sure there weren't any null values that could hinder our analysis. 
+										Some of the questions I wanted answered were: <br/>
+										<br/></p>
+										<h2>How does the game change from Regular Season to Playoffs?</h2>
+
+										<ul>
+										<li><a href="#section1">What stats are most highly correlated with each other?</a></li>
+										<li><a href="#section2">How are Minutes distributed between the Regular Season and Playoffs?</a></li>
+										<li><a href="#section3">How are Points distributed between the Regular Season and Playoffs?</a></li>
+										<li><a href="#section4">What are the changes in stats per 48 minutes from Regular Season to Playoffs?</a></li>
+										<li><a href="#section5">Finding league leaders in PPG increase from Regular Season to Playoffs?</a></li>
+										<li><a href="#section6">Teams with the most amount of Free Throws?</a></li>
+										<li><a href="#section7">Who are the free throw "merchants" of the league?</a></li>
+										</ul>
+								</div>
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+										<img class="nbaimg" src="images/heatmap.png" alt="" data-position="center center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section1">What stats are most highly correlated with each other?</h3>
+											</header>
+											<p>When exploring correlations between basketball statistics, some results appear obvious to regular fans of the game. 
+												It's clear that there are positive correlations between offensive rebounds, 
+												defensive rebounds, and overall rebounds. Similarly, we observe a positive correlation between points and field goal makes and attempts, which is also logical. It was satisfying to find that players with more blocks tend to have a negative correlation with assists. This aligns with the general trend of big men having lower assist numbers but higher block numbers.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NBA_Data_Analysis/blob/main/NBA%20Data%20Analysis.ipynb" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/minutes.png" alt="" data-position="top center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section2">Minute distribution Regular vs Playoffs</h3>
+											</header>
+											<p>Upon analyzing minute distributions, it becomes evident that there is a noticeable shift in how minutes are allocated between the regular season and the playoffs.
+												 In the regular season, the data exhibits a more normalized distribution, resembling a bell curve. However, as the postseason approaches, rotations tend to become tighter, resulting in a shift in the distribution. 
+												 We observe a higher percentage of players either playing fewer or more minutes compared to the regular season.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NBA_Data_Analysis/blob/main/NBA%20Data%20Analysis.ipynb" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/points.png" alt="" data-position="25% 25%" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section3">Points distribution Regular vs Playoffs</h3>
+											</header>
+											<p>When examining the distribution of points among players in both the regular season and playoffs, one would anticipate a similar pattern. 
+												Upon comparing the data, it becomes evident that the playoffs validate the notion that lineups and shot attempts become more concentrated.
+												 This is demonstrated by a higher number of players scoring fewer points in the playoffs compared to the regular season.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NBA_Data_Analysis/blob/main/NBA%20Data%20Analysis.ipynb" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/per48.png" alt="" data-position="center center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section4">Per 48 Changes Regular to Playoffs</h3>
+											</header>
+											<p>When analyzing team statistics per 48 minutes and accounting for the presence of 5 players on the court at any given time, 
+												I aimed to observe the changes in stats league-wide during the transition from the regular season to the playoffs. 
+												After graphing the data, my focus narrowed down to two specific stats: 3-point field goal attempts and free throw attempts. 
+												These particular statistics present a contrasting narrative to conventional wisdom. 
+												Firstly, despite the perception that the 3-point shot has only recently become significant in today's game, 
+												the data reveals its substantial role in playoff basketball over a considerable period. Secondly, contradicting the notion that referees tend to overlook fouls in the playoffs, 
+												the data suggests that they actually award more free throw attempts as the game becomes more physical in the postseason.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NBA_Data_Analysis/blob/main/NBA%20Data%20Analysis.ipynb" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/playoffmurray.png" alt="" data-position="top center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section5">Leaders in PPG increases Regular to Playoffs</h3>
+											</header>
+											<p>Upon examining the statistics at a league-wide level, I decided to delve deeper into player-to-player analysis. 
+												In particular, I focused on the changes that occur when players transition into the playoffs. 
+												My aim was to identify the players who experience the most significant increase in points per game during the postseason. 
+												Often, players acquire iconic monikers such as "Playoff Rando" or "Playoff Jimmy," from their increased performance in the playoffs. 
+												However, the surprising revelation from the data is that "Bubble Murray" emerges as the genuine playoff performer of the past two decades, 
+												boasting a remarkable 8.5-point increase in points per game.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NbaDataQuery/blob/main/NbaDataQuery.sql" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/teamft.png" alt="" data-position="25% 25%" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section6">Teams with the most amount of Free Throws</h3>
+											</header>
+											<p>Returning to a broader perspective, I had a simple query to compare teams. 
+												As a devoted NBA fan from a small town myself, I was curious about one thing: 
+												Do big market teams receive favorable treatment from referees? To my disappointment, 
+												the data I examined provided inconclusive results on this matter. 
+												For example, it was quite surprising to discover that the LA Clippers, 
+												being the smaller of the two LA teams, ranked first in total free throws. 
+												However, this could be attributed to factors such as their style of play during the 
+												"Lob City" era. On a lighter note, it is amusing to observe that all the teams 
+												LeBron James has played for made it into the top 10... of course, 
+												I say this with a touch of humor and without any bias as a Pistons fan.</p>
+											<ul class="actions">
+												<li><a href="https://github.com/MilicajM/NbaDataQuery/blob/main/NbaDataQuery.sql" class="button">Source Code</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<section>
+										<img class="nbaimg" src="images/ftmerch.png" alt="" data-position="top center" />
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3 id="section7">Free Throw Merchants</h3>
+											</header>
+											<p>For my final analysis, I decided to identify the players who rely heavily 
+												on free throws for scoring by calculating the percentage of their points 
+												that come from free throws. Below, I'll provide the dashboard for others 
+												to explore further. Unsurprisingly, familiar names like James Harden, Joel Embiid, 
+												and Jimmy Butler emerged as the prominent "Free Throw Merchants," leading the pack in this category.</p>
+											<ul class="actions">
+												<li><a href="#" class="button">COMING SOON</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+							</section>
+							
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+										<h2>Tableau Dashboard</h2>
+										<div class='tableauPlaceholder' id='viz1685817359506' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' 
+											src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBADataAnalysis_16858160855600&#47;Dashboard1&#47;1_rss.png' 
+											style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' 
+												value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' 
+												value='NBADataAnalysis_16858160855600&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' 
+												value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;NB&#47;NBADataAnalysis_16858160855600&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' 
+												value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' 
+												value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1685817359506');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1627px';} else { vizElement.style.width='100%';vizElement.style.height='1427px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								</div>
+								<div class="inner">
+									<header class="major">
+										<h2>How has the League Changed?</h2>
+									</header>
+									<p>Upon completing my analysis, it is evident that the NBA has undergone 
+										significant changes over the years, marked by an increase in three-point 
+										attempts and a surprising decrease in free throws. These findings challenge 
+										common beliefs about the league becoming "soft." Contrary to popular perception, 
+										the playoff data reveals a consistent upward trend in three-point shooting, 
+										suggesting its significance in postseason play. Additionally, the data refutes 
+										the notion that referees refrain from making foul calls during the playoffs, as 
+										free throw attempts actually increase.<br/>
+										<br/>
+										Another noteworthy observation is the shift in lineups during the playoffs,
+										 with teams tightening rotations and focusing on their best players for shot attempts. 
+										 As the league embraces data-driven approaches to enhance efficiency, it will be 
+										 intriguing to witness the evolution of future basketball players and the construction 
+										 of championship teams. I intend to further explore this data in the future, 
+										 and you are welcome to follow the provided links to access the source code and 
+										 experiment with the interactive dashboard.</p>
+								</div>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://github.com/MilicajM" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.linkedin.com/in/milicajm/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
